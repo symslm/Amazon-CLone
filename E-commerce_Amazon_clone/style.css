@@ -1,0 +1,528 @@
+/*? CSS of Amazon Clone... */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*! Utillity Classes (Used Several Times)  */
+.border {
+    border: 1.2px solid transparent;
+}
+
+.border:hover {
+    border: 1.2px solid white;
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.bold-text {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------------------------- */
+/*? Navbar CSS  */
+.navbar {
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* 1 */
+.nav-logo {
+    height: 50px;
+    width: 128px;
+    padding: 0px 25px 10px 5px;
+}
+
+.logo {
+    background-image: url(./img/amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+/* 2 */
+.nav-address {
+    height: 50px;
+    /* padding: top right bottom left; */
+    /* padding: top leftright bottom; */
+    padding: 10px 5px 0 5px;
+}
+
+.add-first {
+    font-size: 12px;
+    color: #CCCCCC;
+    margin-left: 15.5px;
+    font-weight: 500;
+}
+
+.add-second {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.add-second i {
+    font-size: 15px;
+}
+
+/* 3 */
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: orange;
+    width: 670px;
+    height: 40px;
+    border-radius: 4px;
+    /* margin-left: 20px; */
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    color: #606060;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input {
+    height: 40px;
+    width: 100%;
+    font-size: 15.5px;
+    font-weight: 520;
+    padding-left: 10px;
+    border: none;
+    transition: 0.1s ease-in-out;
+}
+.search-input:focus{
+    outline: none;
+    border: 3px solid orange;
+}
+
+.search-icon {
+    width: 54px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #febd69;
+    color: #131921;
+    font-size: 22px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 0.1s ease-in-out;
+}
+
+.search-select:focus{
+    outline: none;
+    border: 3px solid orange;
+}
+
+/* 4 */
+.lang {
+    width: 72px;
+    text-align: center;
+    display: flex;
+    padding: 15px 5px 15px;
+}
+
+.lang .en {
+    height: 18px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background: transparent;
+}
+
+/* 5 */
+/* for font utility classes are used */
+.signin {
+    width: 140px;
+    padding: 8px 5px 8px;
+}
+
+.acc-list {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.hello {
+    padding-left: 5px;
+}
+
+
+/* 6... used utility classes */
+/* small-text */
+/* bold-text */
+.return {
+    padding: 8px 5px 8px;
+}
+
+
+/* 7 */
+.cart {
+    display: flex;
+    padding: 8px 5px 8px;
+}
+
+.cart-icon i {
+    font-size: 26px;
+}
+
+.cart-text {
+    padding-top: 14px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/*? Nav Panel  */
+.panel {
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p {
+    display: inline;
+    /* margin-left: 13px; */
+}
+
+i {
+    font-size: 18px;
+}
+
+b {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.panel-ops {
+    width: 892px;
+    font-size: 14px;
+    font-weight: 520;
+}
+
+.prime {
+    border: none;
+    background: transparent;
+    color: white;
+    margin-left: 6px;
+}
+
+/* Setting padding for hover borders */
+.menu {
+    margin-left: 10px;
+    padding: 7px 8px 8px;
+}
+
+.pad {
+    padding: 10px 5px 13px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/*? Hero Section  */
+
+/* Background image */
+.hero-section {
+    background: url(./img/hero_image.jpg);
+    background-size: cover;
+    height: 244px;
+    /* margin: 0px 23px 0px; */
+}
+
+/* Shopping Cards */
+.shop-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: linear-gradient(to top, rgb(229, 229, 229), rgb(41, 157, 172));
+}
+
+.box {
+    height: 400px;
+    width: 23.4%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.box-content {
+    margin: 25px 20px 15px;
+}
+
+.box-content a {
+    text-decoration: none;
+    color: #007185;
+    font-size: 14px;
+}
+
+.box-content a:hover {
+    text-decoration: underline;
+    color: #C7511F;
+}
+
+.box-content p {
+    font-size: 21px;
+}
+
+/* utility class */
+.box-image-set {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 255px;
+    margin: 25px 0px 0px;
+}
+
+/* box-1 */
+.box-1-image {
+    background-image: url('./img/box1_image.jpg');
+    margin: 50px 0px 0px;
+
+}
+
+/* box-2 */
+.box-2-image {
+    background-image: url('./img/box2_image.jpg');
+}
+
+/* box-3 */
+.box-3-image {
+    background-image: url('./img/box3_image.jpg');
+    margin: 25px 0px 0px;
+    background-size: cover;
+}
+
+/* box-4 */
+.box-4-image {
+    background-image: url('./img/box4_image.jpg');
+    height: 210px;
+    margin: 50px 30px 40px;
+
+
+}
+
+/* box-5 */
+.box-5-image {
+    background-image: url('./img/box5_image.jpg');
+}
+
+/* box-6 */
+.box-6-image {
+    background-image: url('./img/box6_image.jpg');
+    margin: 50px 0px 0px;
+
+}
+
+/* box-7 */
+.box-7-image {
+    background-image: url('./img/box7_image.jpg');
+}
+
+/* box-8 */
+.box-8-image {
+    background-image: url('./img/box8_image.jpg');
+}
+
+
+/*? Footer Section  */
+/** 1. Back to top */
+.back-to-top {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37475a;
+}
+.back-to-top:hover {
+    background-color: #485769;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 540;
+    color: white;
+}
+
+
+/** 2. about us */
+.about-us {
+    background-color: #232f3e;
+    display: flex;
+    justify-content: space-evenly;
+    height: 330px;
+    padding: 0px 95px 0px;
+}
+
+.about-us p {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about-us a {
+    text-decoration: none;
+    color: #DDDDDD;
+    font-size: 14px;
+    display: block;
+    margin-top: 12px;
+}
+
+.about-us a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-top: 40px;
+}
+
+/** 3. Language-panel */
+.language-panel {
+    background-color: #232f3e;
+    height: 90px;
+    border-top: 00.001px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url(./img/amazon_logo.png);
+    height: 50px;
+    width: 100px;
+}
+
+.eng {
+    margin-left: 80px;
+}
+
+.eng select {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 0.1px solid #bebebe;
+    border-radius: 3px;
+    font-size: 13px;
+    height: 32px;
+    width: 120px;
+    text-align: center;
+}
+
+.hindi {
+    color: black;
+}
+
+.eng i {
+    color: white;
+    font-size: 15px;
+    margin: 9px 0px 0px 7px;
+    position: absolute;
+}
+
+.languages {
+    height: 70px;
+    background-color: #232f3e;
+}
+
+.languages ul {
+    padding: 0px 270px 0px;
+}
+
+.languages ul a {
+    text-decoration: none;
+    color: #DDDDDD;
+    font-size: 12px;
+    padding: 0px 7.2px 0px;
+}
+
+.languages ul a:hover {
+    text-decoration: underline;
+}
+
+.uae {
+    margin-left: 250px;
+}
+
+
+
+/** 4. Panel end */
+.panel-end {
+    background-color: #131a22;
+    height: 230px;
+}
+
+/* 1 */
+.amazon-services {
+    padding: 40px 120px 20px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.amazon-services ul {
+    padding: 0px 20px 0px;
+}
+
+.amazon-services a {
+    color: #999999;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.amazon-services a:hover {
+    text-decoration: underline;
+}
+
+.amazon-services .white {
+    color: white;
+    height: 80px;
+}
+
+/* 2 */
+.conditions {
+    padding-top: 30px;
+}
+
+.condition-first a {
+    padding: 30px 8px 0px 0px;
+    text-decoration: none;
+    color: #DDDDDD;
+}
+.condition-first a:hover{
+    text-decoration: underline;
+}
+
+.condition-first {
+    font-size: 12px;
+    text-align: center;
+}
+
+.condition-second {
+    color: #DDDDDD;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+/* ---------------------END------------------- */
